@@ -1,2 +1,2 @@
 # FM-FMISWebPortal
-Contains FMIS Web Portal content
+Contains code for the cfo.fmis.gsa.gov website.
