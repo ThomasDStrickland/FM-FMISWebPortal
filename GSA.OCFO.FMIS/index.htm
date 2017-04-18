@@ -1,0 +1,333 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<title>GSA : FMIS</title>
+<link href="css/peg60.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="css/peg60_print.css" rel="stylesheet" type="text/css" media="print" />
+<script language="JavaScript">
+<!--
+// Added on 6/02/03 to display security warning before page load
+// msg = " ******************************************* WARNING *******************************************\n";
+ msg = " ************************* WARNING ***********************************\n";
+ msg = msg + "\n YOU HAVE CONNECTED TO A U.S. GOVERNMENT COMPUTER.";
+ msg = msg + "\n IF YOU ARE NOT AUTHORIZED ACCESS TO THIS SYSTEM, DISCONNECT NOW.\n";
+ msg = msg + "\n All attempts to access and use this system and/or its resources are subject to";
+ msg = msg + "\n keystroke monitoring and recording.  Everyone using this system expressly consents";
+ msg = msg + "\n to such monitoring and is advised that if such reveals possible evidence of";
+ msg = msg + "\n criminal activity or abuse of authority, the information will be reported to";
+ msg = msg + "\n authorities for action. Unauthorized access attempts or use in excess of documented";
+ msg = msg + "\n authority may subject you to a fine and/or imprisonment in accordance with";
+ msg = msg + "\n Title 18, USC, Section 1030 or administrative penalties or dismissal.\n";
+ msg = msg + "\n ************************* WARNING **********************************";
+// msg = msg + "\n ******************************************* WARNING *******************************************";
+ //Get cookie routine by Shelley Powers
+function get_cookie(Name) {
+var search = Name + "="
+var returnvalue = "";
+if (document.cookie.length > 0) {
+offset = document.cookie.indexOf(search)
+// if cookie exists
+if (offset != -1) {
+offset += search.length
+// set index of beginning of value
+end = document.cookie.indexOf(";", offset);
+// set index of end of cookie value
+if (end == -1) end = document.cookie.length;
+returnvalue=unescape(document.cookie.substring(offset, end))
+}
+}
+return returnvalue;
+}
+
+if (get_cookie("pegasys_warning") != "agrees")
+  {if (!confirm(msg))
+	{ window.location.href ="http://www.gsa.gov"}
+    else {
+//	          alert("setting variable")
+	          document.cookie ="pegasys_warning=agrees"}
+
+  }
+//-->
+</script>
+
+</head>
+<body>
+<div id="container">
+    <div id="everything">
+        <div id="headcontainer">
+            <div id="header">
+				<img src="images/gsa_star.gif" alt="GSA Star Logo" align="left" />
+				<img src="images/banner_right.jpg" alt="FMIS Logo" align="right" />
+			</div>
+        </div>
+       
+        <div id="mainnavcontainer">
+            <div id="mainnav">
+                <ul>
+                    <li class="selected"><a href="index.htm">FMIS</a></li>
+                    <li><a href="http://www.gsa.gov" target="_blank">GSA.gov</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="subnavcontainer">
+            <div id="subnav">
+                <ul>
+                    <li class="selected"><a href="index.htm">Home</a></li>
+                    <li><a href="about.htm">About FMIS</a></li>
+                    <li><a href="manual.htm">Reference</a></li>
+                    <li><a href="faq.htm">FMIS FAQ</a></li>
+                    <li><a href="support.htm">Tech Support</a></li>
+                    <li><a href="contacts.htm">FMIS Contacts</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="main">
+            <div id="indcontent">
+                <div id="indmaincontent">
+                    <!--<div id="banner">
+                        <p class="mission"></p>
+                    </div>-->
+                    <div id="columns">
+                        <div class="col">
+                        
+							<div class="leftcolbox">
+								<span class="title">FMIS News and Announcements</span>
+<div class="leftcolbox"></br></br>								
+								<!--<span class="title"><font color="Red">PLANNED FMIS OUTAGE: 7 p.m. (ET) Mar 9 -  7 a.m. (ET) Mar 14</font></span>
+								<p><b>SCHEDULED OUTAGE TIME:</b></br><b>7 p.m. (Eastern Time) Thursday, March 9 - 7 a.m. (Eastern Time) Tuesday, March 14</b></br></br><b>FMIS will be unavailable</b> due to the implementation of the Pegasys Cloud Hosting Migration.</br></br></p>
+</div>-->
+
+<div class="leftcolbox">	
+								<span class="title">What's Changed for FMIS?</span>
+<p>Please review <a href="dload\FMIS_Report_Enhancements_April_2015.pdf" target="_blank">this document</a> to see what changes came to FMIS as part of the recent Pegasys 7.1.2 Upgrade.</p>
+</div>
+
+
+
+<div class="leftcolbox">								
+								<span class="title">NEW CITRIX LOGIN SCREEN</span>      
+                             <p><strong>FMIS to launch new Citrix login portal the evening of December 21</strong></p>
+			     <p>FMIS users will see a new Citrix login screen after GSA IT completes a front-end upgrade the evening of Monday, December 21.</p>
+<p>Once the upgrade is complete, the previous Citrix portal URL (<a href="https://xawi.gsa.gov/" target="_blank">https://xawi.gsa.gov</a>) will automatically redirect to the new portal, which will be located at <a href="https://finhrapps.anywhere.gsa.gov/" target="_blank">https://finhrapps.anywhere.gsa.gov</a>. Users will use the same login information to log in to the system. Only the appearance of the login screen and the URL of the portal will change.</p>
+                        <img src="images/Citrix-Login-Screen--Before-and-After.png" width="525px"/>     
+</div>
+<div class="leftcolbox">
+                             <span class="title">AGENCY CODE CHANGES IN FMIS DUE TO BAAR PHASE 2A IMPLEMENTATION</span>      
+                             <p><strong>The Financial Management Information System (FMIS) now identifies an agency with a five-digit code.</strong> This transition to use a five-digit code to identify agencies is a part of the Government-wide Treasury Account Symbol Adjusted Balance System (GTAS) project and was part of the recent implementation of the Phase 2A Billings and Accounts Receivable (BAAR) module.</p>
+<p>To find an agency’s new identification code, review the document titled <strong>"4-Digit to 5-Digit Agency Code Crosswalk (FMIS)"</strong> at <a href="https://insite.gsa.gov/portal/content/513050" target="_blank">https://insite.gsa.gov/portal/content/513050</a>.</p>
+</div>
+  <div class="leftcolbox">	
+
+                             <span class="title">New Financial, HR IT Services website now available!</span>        
+<p>The Office of Financial and HR IT Services website is now available! Check it out at <a href="http://finhrapps.gsa.gov">http://finhrapps.gsa.gov</a>. This new site provides a wealth of information on financial applications, including Pegasys, FMIS, Business Objects and more. Check out the training opportunities, tips and reference material - all on one site! <br />
+            <br />
+
+Want to stay up to date on financial application news? Join our <a href="http://finhrapps.gsa.gov/fyi-email-listserv-signup.aspx">AppYap ListServ email group</a> and follow our <a href="https://gsa.my.salesforce.com/_ui/core/chatter/groups/GroupProfilePage?g=0F930000000Tlgq">AppYap Chatter group</a>.<br />
+            <br></p>
+</div>
+
+								
+							<div class="leftcolbox">
+                                <br />
+
+								<span class="title">NEW ACCESS REQUEST PROCEDURE</span>
+
+                               <ul>
+                                   <li><p>The FMIS Access Request process is now automated.  The process has been migrated to EARS (Enterprise Access Request System).  In order to request access to FMIS please click on the link below to launch EARS and follow the instructions.  <a href="support.htm">Instructions for Requesting Access to FMIS</a> found on the Tech Support Tab of this website.</p></li>
+                                   <ul>
+                                   <li><a href="https://ears.ocfo.gsa.gov/ears/faces/home.jsp" target="_blank">EARS</a></li>
+									<li><a href="support.htm">Instructions for Requesting Access to FMIS</a></li>
+                                   </ul>
+                                   
+                                   </ul>
+			                </div>
+
+
+							<div class="leftcolbox">
+                                <br />
+								
+								<span class="title">What’s available for FMIS users?</span>
+
+                               <ul>
+                               <li><p>A new computer-based training course for FMIS is available. <a href="fmistrain/a001_accessibility_course_accessibility.html">Learn</a> how to use this important financial query tool</p></li>
+                                   <li><p>
+The Office of Financial Management Systems has updated their FMIS learning materials and resources available for all FMIS users. These resources include a User Guide, a Training Presentation, and Quick Reference Guides. The User Guide provides a comprehensive description on specific FMIS topics along with step-by-step instructions. The User Guide also provides a variety of Quick Tips that offer instructional and background information on important concepts and answers to help troubleshoot common issues. The Training Presentation contains PowerPoint slides that are presented in the classroom course. These slides provide specific instructions and descriptions of when and how to use FMIS features. The Quick Reference Guides provide users with quick instructions on specific FMIS features and topics.  These topics include Frequently Used Queries, Queries, Saving and Printing, System Access and Log-In, and VAT Data Collection.</p>
+
+<p>To access the FMIS Reference Materials copy and paste the following URL in an Internet Explorer Window. <a href="http://cfo.fmis.gsa.gov/manual.htm" target="_blank">http://cfo.fmis.gsa.gov/manual.htm</a>  (FMIS is not accessible using the Google Chrome browser application.)</p>
+
+                                   	</li></ul>
+			                </div>
+
+
+							<div class="leftcolbox">
+                                <br />
+								
+								<span class="title">LOGON PROCESS</span>
+
+                               <ul>
+<!--
+                                   <li><p><strong>Starting April 8, 2011 the method for accessing the FMIS application will change. When launching the application via the application web site, you will be redirected to the new OCFO Citrix environment. This environment includes a redesigned login page and an updated Citrix platform for enhanced security, performance and stability. The application migration will require you to change your CITRIX (1st Screen) password to meet GSA password policy.  We also strongly recommend that you change your FMIS (2nd Screen) password as well.  This will reset both applications' 90 day password change requirements at the same time alleviating being "caught between screens" at some point in the future.</strong></p>
+                                   	</li>
+
+				<h3><u>Webapps domain password requirements:</u></h3>
+				<li>Passwords must have a minimum length of 8 characters</li>
+				<li>Contain characters from three of the following four categories:</li> 
+				<UL>
+					<li>English uppercase characters (A through Z)</li>
+					<li>English lower-case characters (a through z)</li>
+					<li>Base 10 digits (0 through 9)</li>
+					<li>Non-alphabetic characters (for example, !, $, #, %)</li>
+				</ul>
+				<li>The new password cannot be one of your 10 previous passwords</li><br> 
+-->
+					<br>
+                                   <li><strong><a href="dload/FMIS_Citrix_Login_Experience.docx">Click on this link to view Step-by-step login instructions</a></strong></li>
+                        
+			                	</ul>
+
+			                </div>
+
+                          </div>   
+                        </div>
+                        
+                       
+                        <div class="col">      
+
+<!--
+				<div class="rightcolbox">
+
+				<span class="title">Financial Systems Service Desk Extended Hours for Year-end Closing (FY 2016):</span>
+<p>The Financial Systems Service Desk will be available to users on an extended schedule from September 22-30 to support year-end financial operations. During this time frame, the hours of operation will be as follows:</p>
+<table border="1" style="margin:0 0 10px 15px;width:95%">
+<tr>
+	<td>DATES (Sept. 22-30)</td>
+	<td>TIMES (All times are listed as Eastern Time)</td>
+</tr>
+
+<tr>
+	<td>Thursday, Sept. 22 - Friday, Sept. 23</td>
+	<td>7:30 a.m. - 9 p.m.</td>
+</tr>
+
+<tr>
+	<td>Saturday, Sept. 24</td>
+	<td>8 a.m. - 5 p.m.</td>
+</tr>
+<tr>
+	<td>Sunday, Sept. 25</td>
+	<td>8 a.m. - 3 p.m.</td>
+</tr>
+<tr>
+	<td>Monday, Sept. 26 - Tuesday, Sept. 27</td>
+	<td>7:30 a.m. - 9 p.m.</td>
+</tr>
+<tr>
+	<td>Wednesday, Sept. 28 - Thursday, Sept.29</td>
+	<td>7:30 a.m. - 10 p.m.</td>
+</tr>
+<tr>
+	<td>Friday, Sept. 30</td>
+	<td>7:30 a.m. - midnight</td>
+</tr>
+</table>
+
+<p> Please contact the Financial Systems Service Desk at <strong>1-866-450-6588</strong> or <a href="mailto:OCFOServiceDesk@gsa.gov">OCFOServiceDesk@gsa.gov</a></p>
+                            </div>
+
+-->
+
+                        
+
+							<div class="rightcolbox">
+								<span class="title">FMIS Users</span>
+                                <ul>
+                                    <li>
+										Welcome to GSA's Financial Management Information System - (FMIS).
+										FMIS is now totally web based via a Citrix connection.
+										Before continuing, please make sure the appropriate plug-in is installed on your system.
+										<br /><br />
+										To comply with GSA IT Security Policy (CIO P 2100.1C) requirements within the FMIS database and each database user will be 
+										obliged to change their password in the application every 90-days. This is the second password once you have logged on to 
+										the Citrix MetaFrame.  <a href="pwd-alert.htm">Read further instructions</a>.<br />
+									</li>
+                                </ul>
+                                <br />
+                            </div> 
+                            
+        
+							<div class="rightcolbox">
+								<div class="title">FMIS System</div>
+									<table width="100%">
+
+										<tr>
+											<td align="center">
+												<a href="https://finhrapps.anywhere.gsa.gov/"><img src="images/fmis_icon.gif" alt="FMIS" border="0"></img></a>
+											</td>
+											<td align="center">
+												<a href="https://xawi.gsa.gov"><img src="images/pcb_ads_icon.jpg" alt="Click here to login to PCB ADS" border="0"></img></a>
+											</td>	
+										</tr>
+										<tr>
+											<td><h5><a href="https://xawi.gsa.gov">FMIS</a></h5>
+											</td>
+											<td><h5><a href="https://xawi.gsa.gov">FMIS-ADS</a></h5>
+											</td>
+										</tr>
+
+
+
+									</table>								
+								</div>
+
+					
+
+							<div class="rightcolbox"><span class="title">The OCFO Service Desk is here to help you</span>
+			
+                         							
+                               <ul>
+                                   <li>
+                                       <p>The OCFO Service Desk's email address, and phone number are as follows:<br /></p>
+                                       <ul>
+                                       <li><strong>E-mail:</strong> <a href="mailto:OCFOServiceDesk@gsa.gov">OCFOServiceDesk@gsa.gov</a></li>
+                                       <li><strong>Phone:</strong> 1-866-450-6588.</li>
+                                       </ul>
+                                   </li>
+                        
+									    	<li>
+									    		<strong>Please contact OCFO Service Desk to make following requests.</strong> 
+							        	   		<ul>
+							        				<li>Logon Problems</li>
+							        				<li>New User Accounts</li>
+							        				<li>Printing Problems</li>
+							        				<li>Data Issues</li>
+		       							 			<li>All Other Issues</li>        
+		    							   		</ul>
+		        							</li>
+
+			       				</ul>		
+                            </div>
+                            
+                            
+                                                    
+                        </div>
+                        <br />
+                    </div>
+                </div>
+            </div>
+            <div id="rightnav">
+                <div id="nav">
+                    <h3>OCFO e-Tools</h3>
+                    <ul>
+                        <li><a href="http://cfo.fmis.gsa.gov">Financial Management Information System (FMIS)</a></li>
+						<li><a href="https://cforeports.gsa.gov">Financial Reports Online</a></li>
+						<li><a href="http://bi.cfo.gsa.gov/">Business Intelligence</a>
+                    </li>
+                    </ul>
+                    <br />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

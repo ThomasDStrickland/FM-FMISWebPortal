@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<info>
+	<infoitem key="UD_useridreport" value="name:ref_num;datatype:3,name:user;datatype:202,name:userphone;datatype:202,name:date_requested;datatype:135,name:mgrname;datatype:202,name:mgrphone;datatype:202,name:mgrtitle;datatype:202,name:purpose;datatype:203,name:confques;datatype:202,name:confansw;datatype:202,name:useragree;datatype:202,name:system;datatype:202,name:mgmt_approver;datatype:202,name:mgmt_app_date;datatype:202,name:sec_approver;datatype:202,name:sec_app_date;datatype:202,name:userid;datatype:202" />
+</info>

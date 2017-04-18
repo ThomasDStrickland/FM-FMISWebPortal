@@ -1,0 +1,77 @@
+﻿/*CSS Document*/
+
+#container {
+	width: 100%;
+}
+
+#headcontainer, #mainnavcontainer, #subnavcontainer, #rightnav, #banner {
+	display: none;
+}
+
+#main {
+	width: 100%;
+}
+
+#content {
+	float: left;
+	width: 100%;
+	margin-right: 5px;
+}
+
+#maincontent {
+	margin: 5px 5px 5px 5px;
+}
+
+#columns {
+	background-color: #e1ebf4;
+	
+}
+
+div.col {
+	width: 90%;
+	margin: 5px;
+}
+
+div.newscol {
+	width: 100%;
+	*width: 98.5%;
+	float: left;
+	margin: 0.5%;
+}
+
+
+div.leftcolbox, div.rightcolbox {
+	margin-bottom: 5px;
+}
+
+div.leftcolbox {
+	border-top: 3px solid #00427b;
+}
+
+div.rightcolbox {
+	border: 1px solid #ccc;
+	background-color: #fff;
+}
+
+div.leftcolbox ul, div.rightcolbox ul {
+	margin: 5px 5px 5px 25px;
+	padding: 0;
+}
+
+div.leftcolbox .title {
+	font-weight: bold;
+	font-size: 110%;
+	margin: 0 5px 0 0;
+}
+
+div.rightcolbox .title {
+	font-weight: bold;
+	font-size: 110%;
+	display: block;
+	background-color: #00427b;
+	border-left: 10px solid yellow;
+	border-bottom: 1px solid #ccc;
+	color: #fff;
+	padding: 2px 10px 2px 10px;
+}
+

@@ -1,0 +1,140 @@
+/* CSS Document */
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.9em;
+}
+
+#wrapper {
+	width: 100%;
+	height: 100%;
+}
+
+#header {
+	width: 100%;
+	border-top: 4px solid #900;
+	height: 60px;
+}
+
+#nav {
+	width: 100%;
+	height: 30px;
+	border-bottom: 5px solid #03487f;
+}
+
+#content {
+	width: 100%;
+	*height: 60%;
+	min-height: 60%;
+}
+
+#footer {
+	width: 100%;
+	border-top: 4px solid #900;
+	text-align: center;
+	padding: 8px;
+}
+
+br {
+	clear: both;
+}
+
+/* menu settings */
+
+#nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0 0 0 5px;
+}
+
+#nav ul li {
+	margin: 0;
+	padding: 0 0 0 3px;
+	*padding: 0;
+	float: left;
+	background: url("../images/mainnav-left-noselect.gif") no-repeat left top;
+}
+
+#nav ul li a {
+	display: block;
+	float: left;
+	padding: 8px 14px 6px 10px;
+	margin: 0 2px 0 2px;
+	background: url("../images/mainnav-right-noselect.gif") no-repeat right top;
+	color: #00427b;
+	text-decoration: none;
+	font-size: 10pt;
+	font-weight: bold;
+}
+
+#nav a:hover {
+	color: #000;
+}
+
+#nav ul li.selected {
+	background: url("../images/mainnav-left-select.gif") no-repeat left top;
+}
+
+#nav ul li.selected a, #nav ul li.selected a:hover {
+	color: #fff;
+	background: url("../images/mainnav-right-select.gif") no-repeat right top;
+}
+
+/* columns for front page */
+
+#leftcol {
+	padding: 0.5%;
+	float: left;
+	width: 49%;
+}
+
+#rightcol {
+	padding: 0.5%;
+	float: left;
+	width: 49%;
+}
+
+.colbox {
+	border: 1px solid #ccc;
+	padding: 3px;
+}
+
+/* format for backpages */
+
+#back {
+	width: 100%;
+	height: 60%;
+	padding-top: 8px;
+}
+
+#leftnav {
+	height: 100%;
+	width: 154px;
+	*width: 150px;
+	background-color: #9cf;
+	border-right: 1px solid #369;
+	border-top: 1px solid #369;
+}
+
+#leftnav ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+#leftnav ul li a {
+	display: block;
+	width: 150px;
+	background-color: #9cf;
+	border-bottom: 1px solid #369;
+	text-decoration: none;
+	padding: 4px 0 4px 4px;
+	color: #000;
+}
+
+#leftnav ul li a:hover {
+	background-color: #fff;
+}

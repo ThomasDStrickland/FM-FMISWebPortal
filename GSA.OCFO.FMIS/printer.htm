@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Request a Printer Driver in FMIS</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="fmis.css" rel="stylesheet" type="text/css">
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="525" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr> 
+    <td bgcolor="#CCCCCC"><div align="center"><span class="headtitle">FMIS Printer 
+        Driver Request</span></div></td>
+  </tr>
+  <tr>
+    <td height="8">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td><form name="form1" method="post" action="fmisprint.php">
+        <table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr valign="top" class="bodytext"> 
+            <td width="50%" height="28">Name : </td>
+            <td width="50%" height="28"> <input name="name" type="text" id="fname2"> 
+            </td>
+          </tr>
+          <tr valign="top" class="bodytext"> 
+            <td width="50%" height="28">FMIS Login ID : </td>
+            <td width="50%" height="28"> <input name="loginid" type="text" id="loginid2"> 
+            </td>
+          </tr>
+          <tr valign="top" class="bodytext"> 
+            <td width="50%" height="28">Phone Number : </td>
+            <td width="50%" height="28"> <input name="phone" type="text" id="phone2" size="15" maxlength="15"> 
+            </td>
+          </tr>
+          <tr valign="top" class="bodytext"> 
+            <td width="50%" height="28">PC Name : </td>
+            <td width="50%" height="28"> <input name="pcname" type="text" id="pcname2"> 
+            </td>
+          </tr>
+          <tr valign="top" class="bodytext"> 
+            <td width="50%" height="28">Operating System : </td>
+            <td width="50%" height="28"> <select name="os" id="os">
+                <option>Windows 95</option>
+                <option>Windows 98</option>
+                <option selected>Windows NT</option>
+                <option>Windows 2000</option>
+                <option>Windows XP</option>
+              </select></td>
+          </tr>
+          <tr valign="top" class="bodytext"> 
+            <td width="50%" height="28">Printer Type: </td>
+            <td width="50%" height="28"> <input name="printer" type="text" id="printer"> 
+            </td>
+          </tr>
+          <tr valign="top" class="bodytext"> 
+            <td colspan="2"> <table width="80%" border="0" align="center">
+                <tr> 
+                  <td width="50%"> <div align="center"> 
+                      <input type="submit" name="Submit" value="Submit Request">
+                    </div></td>
+                  <td width="50%"> <div align="center"> 
+                      <input type="reset" name="Submit2" value="Clear Form">
+                    </div></td>
+                </tr>
+              </table></td>
+          </tr>
+        </table>
+      </form></td>
+  </tr>
+</table>
+</body>
+</html>
